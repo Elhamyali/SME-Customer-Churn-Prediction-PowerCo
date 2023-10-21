@@ -1,0 +1,39 @@
+---
+title: "PowerCo Hypothesis Approach"
+author: "Elham Ali"
+format: pdf
+editor: visual
+---
+
+## Email
+
+Hi Maria,
+
+I am following up on our initial team meeting regarding how to best approach the hypothesis that customer churn in the SME segment is primarily driven by price sensitivity. Below is my proposed methodology:
+
+#### Hypothesis
+
+Our primary
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+## Additional Information
+
+The below information will not be added to the email. However, it provides context behind my approach.
+
+**Null Hypothesis** $H_0$
+
+There [is no]{.underline} relationship between price-related factor (like 'price' or 'price changes') and the likelihood of SME customers churning from PowerCo.
+
+**Alternative Hypothesis** $H_A$
+
+This [is]{.underline} a relationship between price-related factor (like 'price' or 'price changes') and the likelihood of SME customers churning from PowerCo.
