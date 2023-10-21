@@ -13,11 +13,10 @@ I am following up on our initial team meeting regarding how to best approach the
 
 #### Hypothesis
 
-Our primary
+Our primary hypothesis is that SME customers are leaving PowerCo because of price sensitivity. This means that we are looking to predict the likelihood of churn based on price-related factors.
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-You can add options to executable code like this
+-   The outcome variable will be `churn`
+-   The predictor variable will be `price` or `price changes`
 
 ```{r}
 #| echo: false
@@ -25,6 +24,12 @@ You can add options to executable code like this
 ```
 
 The `echo: false` option disables the printing of code (only output is displayed).
+
+#### Data Required
+
+To test this hypothesis, we would need historical data from PowerCo, specifically related to the SME customer segment. An ideal data frame would look like the following:
+
+-   
 
 ## Additional Information
 
@@ -37,3 +42,7 @@ There [is no]{.underline} relationship between price-related factor (like 'price
 **Alternative Hypothesis** $H_A$
 
 This [is]{.underline} a relationship between price-related factor (like 'price' or 'price changes') and the likelihood of SME customers churning from PowerCo.
+
+$$
+\text{Probability(Churn)} = \frac{1}{1 + \text{exp}(-(\text{Intercept} + \text{Coefficient1} \times \text{Monthly\_Bill} + \text{Coefficient2} \times \text{Price\_Change} + \ldots))}
+$$
